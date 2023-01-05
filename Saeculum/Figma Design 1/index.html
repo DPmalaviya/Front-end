@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+  function myFunction() {
+    var x = document.getElementById("khuljaa");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+ </script>
+
+<body>
+    <section class="container-fluid pt-4 px-3 px-lg-5">
+        <div class="d-flex flex-center">
+            <div>
+                <!-- logo -->
+                <a href="./code-structure.html"><img src="img/Rectangle 4.png"></a>
+            </div>
+            <div class="ms-auto pt-3 hide-nav-option mt-2">
+                <ul class="list-unstyled list-inline" id="khuljaa">
+                    <li class="list-inline-item items one-mt">Home</li>
+                    <li class="list-inline-item items">Product</li>
+                    <li class="list-inline-item items">About</li>
+                    <li class="list-inline-item items">Contact</li>
+                </ul>
+            </div>
+            <div class="ms-auto me-3 pt-2 mt-1"><button type="button" class="btn btn-primary">Sign Up</button></div>
+            <a href="javascript:void(0);" class="icon pt-2 hide-nav-btn" onclick="myFunction()">
+              <img src="img/Vector.png" alt="vector">
+            </a>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <!-- Lightning fast prototyping section -->
+            <h1>Lightning <br class="hide desktop-show">fast prototyping</h1>
+            <p class="for-width-letter mx-auto py-4">Most calendars are designed for teams.<br
+                class="hide desktop-show"> Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+            <div class="text-center"><button class="mt-5 border-0"> Try For Free </button></div>    
+        </div>
+    </section>
+
+    <section>
+        <!-- add image in full -->
+        <!-- use w-100 h-100 -->
+        <img src="img/Frame 3.png" alt="main-pic" class="w-100 h-100">
+    </section>
+
+
+    <section class="bg-blue">
+        <div class="container">
+            <h2 class="mb-5">Fastest way to navigate</h2>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-6">
+                    <!-- Design with real
+                    data -->
+                    <div class="card-data my-1 mx-auto">
+                        <div><img src="img/fa-brands_themeco.png" alt="theme"></div>
+                        <div class="hd-2">Design with real data</div>
+                        <div class="hd-3 pe-md-5 mt-4">Ever wondered if you're too reliant on a client for work? Slate helps you
+                          identify .</div>
+                        <div class="px-3 mt-5 w-100 d-grid gap-4">
+                          <div>
+                            <div class="d-flex">
+                              <div class="card-left mt-2">Facebook</div>
+                              <div class="ms-auto card-right">35,929</div>
+                            </div>
+                            <div class="progress h-25">
+                              <div class="progress-bar" role="progressbar"
+                                style="width: 50%;background:#2CD9C5!important;" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex">
+                              <div class="card-left mt-2">Twitter</div>
+                              <div class="ms-auto card-right">28,854</div>
+                            </div>
+                            <div class="progress h-25">
+                              <div class="progress-bar" role="progressbar"
+                                style="width: 30%;background:#2D99FF!important;" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex">
+                              <div class="card-left mt-2">Behance</div>
+                              <div class="ms-auto card-right">1,843</div>
+                            </div>
+                            <div class="progress h-25">
+                              <div class="progress-bar" role="progressbar"
+                                style="width: 80%;background:#826AF9!important;" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex">
+                              <div class="card-left mt-2">Instagram</div>
+                              <div class="ms-auto card-right">49,943</div>
+                            </div>
+                            <div class="progress h-25">
+                              <div class="progress-bar" role="progressbar"
+                                style="width: 10%;background:#FFE700!important;" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <div class="col-12 col-lg-6">
+                    <!-- Work at the speed
+                    of thought. -->
+                    <div class="card-data my-1 mx-auto">
+                        <div><img src="img/gridicons_themes.png" alt="theme"></div>
+                        <div class="hds-2 mt-3">Work at the speed of thought.</div>
+                        <div class="hd-3 pe-md-5 mt-4">Ever wondered if you're too reliant on a client for work? Slate helps you identify .</div>
+                        <div class="w-100 mt-5"><img src="img/Chart.png" alt="theme" class="img"></div>
+                    </div>
+                </div>
+                </div>
+               </div>
+            <div class="bg-blue py-5 text-center "><button class="my-3 bg-white text-primary border-0"> Try For Free </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-blue mx-auto pt-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <!-- left panel -->
+                    <h2 class="text-dark open-yt text-md-start">OpenType features and Variable fonts</h2>
+                    <p class="open-yt-2 pe-5 mt-3">Most calendars are designed for teams. Slate is designed for freelancers who want a
+                        simple way to plan their schedule.</p>
+                    <div class="row for-mb">
+                            <div class="col-sm-10 col-md-7 for-mobile-view mt-2">
+                              <input type="email" class="form-control for-50" id="inputEmail3" placeholder="Enter Your Email">
+                            </div>
+                            <div class=" col-md-4 col-sm-11"><button class="subscribe mt-2 border-0"> Subscribe </button></div>
+                    </div>            
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- right img  -->
+                    <!-- not use position absolute -->
+                    <img src="img/iPhoneX - White.png" alt="iphone-pic" class="iphone-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <h2 class="text-dark mt-5">Work better <br class="hide desktop-show">together</h2>
+            <p class="col-4 mx-auto text-center footer-content mb-5">Being a freelancer is a rollercoaster of emotions. We
+                built Slate to keep your freelance business less stressful. We'd love to show you what we're building...</p>
+            <div class="progress mx-auto w-75 for-50">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="d-flex w-75 mx-auto">
+                    <div class="card-left mt-2">Facebook</div>
+                    <div class="ms-auto card-right">35,929</div>
+            </div>
+            <div class="text-center"><button class="my-5 border-0"> Try For Free </button></div>    
+        </div>
+    </section>
+
+    <section style="background: #112D57;" class="py-4">
+        <div class="d-flex flex-center flex-column flex-lg-row">
+            <div class="mx-auto mx-lg-0 ms-lg-3">
+                <!-- logo -->
+                <img src="img/Rectangle 4 white.png">
+            </div>
+            <div style="font-size: x-large;" class="mx-auto my-3 my-lg-0 mt-lg-3">
+                <!-- social links -->
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter text-white"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official text-white"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square text-white"
+                    aria-hidden="true"></i></a>
+            </div>
+            <div class="mx-auto mx-lg-0 me-lg-3 p-0 pt-lg-3">
+                <!-- text -->
+                <small class="text-secondary">Just type what's on your mind</small>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        
+    </head>
+<style>
+    #m1 {
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 5%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 10px 10px 8px #888888;
+        border-radius: 7px;
+    }
+
+    #m2 {
+        margin: 4%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    body {
+        background-color: #eee
+    }
+</style>
+<body>
+    <div id="m1">
+        <div id="m2">
+            <form>
+                <label for="fname">User ID</label>
+                <input type="text" id="fname" name="fname" value="IN7837" readonly><br><br>
+                <label for="lname">Username*</label>
+                <input type="text" id="lname" name="lname" placeholder="abc@xyz.com" required><br><br>
+                <label for="lname">Password*</label>
+                <input type="password" id="pwd" name="pwd" pattern=".{8,}"title="Eight or more characters" required>&nbsp;&nbsp;<small style="color:red">*minimum 8 characters are required</small><br><br>
+
+                <label for="gender">Select your Gender</label>  <br>
+                <input type="radio" id="male" name="age" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="age" value="female">
+                <label for="female">Female</label><br> <br>
+                Country :
+                <select name="country" id="country">
+                    <option value="Brazil" selected disabled>Brazil</option>
+                    <option value="Jordan" disabled>Jordan</option>
+                </select><br><br>
+                <label for="language">Known Language</label><br>
+                <input type="checkbox" id="Hindi" name="age" value="Hindi">
+                <label for="Hindi">Hindi</label><br>
+                <input type="checkbox" id="Gujarati" name="age" value="Gujarati">
+                <label for="Gujarati">Gujarati</label><br>
+                <input type="checkbox" id="English" name="age" value="English">
+                <label for="English">English</label><br><br>
+                <input type="submit" value="Submit">&nbsp;
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
